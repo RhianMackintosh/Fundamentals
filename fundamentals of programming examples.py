@@ -229,7 +229,8 @@ for x in block:
     print(line)
 
 #-----------------------------------------------------------------------------
-array3 = [[["01" for i in range(5)]for i in range(5)]["10" for i in range(5)] for i in range(5)]
+#Array experimenting that currently does not work
+'''array3 = [[["01" for i in range(5)]for i in range(5)]["10" for i in range(5)] for i in range(5)]
 
 print(array3)
 
@@ -237,10 +238,11 @@ for x in array3:
     line = ""
     for i in x:
         line = line+str(i)+""
-    print(line)
+    print(line)'''
 
 print("-------")
 #-----------------------------------------------------------------------------
+
 #subroutines (procedures and functions)
 Nm = "Rhian"
 
@@ -249,7 +251,12 @@ def hello(name):
     print("Hello "+name)
 hello(Nm)
 
-##add text file stuff##
+x = open("Test File.txt","a")
+x.write(Nm)
+x.close()
+
+x = open("Test File.txt","r")
+print(x.readlines())
 print("-------")
 #-----------------------------------------------------------------------------
 
